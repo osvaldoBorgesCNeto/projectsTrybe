@@ -1,0 +1,1 @@
+SELECT ContactName AS 'Nome', Country AS 'País', (SELECT COUNT(*) FROM w3schools.customers as c2 WHERE c2.Country = c1.Country AND c2.ContactName <> c1.ContactName) AS 'Número de compatriotas' FROM w3schools.customers AS c1 WHERE (SELECT COUNT(*) FROM w3schools.customers as c2 WHERE c2.Country = c1.Country AND c2.ContactName <> c1.ContactName) <> 0 ORDER BY `Nome` ASC;

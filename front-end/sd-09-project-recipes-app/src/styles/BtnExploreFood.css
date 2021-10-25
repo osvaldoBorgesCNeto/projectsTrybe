@@ -1,0 +1,31 @@
+.btnExploreFood {
+  align-items: flex-end;
+  color: black;
+  display: flex;
+  font-size: 32px;
+  font-style: normal;
+  height: 89px;
+  left: 20px;
+  line-height: 37px;
+  position: absolute;
+  top: 81px;
+  width: 322px;
+}
+
+.btnExploreDrink {
+  align-items: flex-end;
+  color: black;
+  display: flex;
+  font-size: 32px;
+  font-style: normal;
+  height: 89px;
+  left: 19px;
+  line-height: 37px;
+  position: absolute;
+  top: 196px;
+  width: 322px;
+}
+
+.explorer {
+  margin-top: 58px;
+}

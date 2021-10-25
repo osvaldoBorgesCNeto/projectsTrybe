@@ -1,0 +1,1 @@
+CREATE VIEW perfil_artistas AS SELECT a.artista AS 'artista', ab.album AS 'album', (SELECT COUNT(*) FROM SpotifyClone.seguindo_artistas GROUP BY artista_id HAVING artista_id = a.artista_id) AS 'seguidores' FROM SpotifyClone.albums AS ab INNER JOIN SpotifyClone.artistas AS a ON a.artista_id = ab.artista_id ORDER BY `seguidores` DESC, `artista` ASC, `album` ASC;
